@@ -1,29 +1,41 @@
 # Supplier Connect API
 
-This is a lightweight Flask-based REST API built for a Supplier Connect application. It manages users, suppliers, products, and order submissions, and is intended to be used with a Flutter frontend.
+This is a simple RESTful API built with Python Flask for a **Supplier Connect** application. It provides basic user authentication, supplier listings, product details, and order submission functionalities for integration with a Flutter app.
 
-### 🌐 Live API
-> Hosted on Vercel  
-👉 [https://amazon-api-main.vercel.app](https://amazon-api-main.vercel.app)
+## 🌐 Live API
 
----
-
-## 🚀 Features
-
-- ✅ User Login with Session Tokens
-- 📦 View All Suppliers
-- 🛒 View Products by Supplier
-- 🧾 Submit Orders with Multiple Items
-- 🔒 Basic token-based Authentication
+[https://flutter-api-sigma.vercel.app/](https://flutter-api-sigma.vercel.app/)
 
 ---
 
-## 📁 Project Structure
+## 🔐 Sample Login Credentials (Dummy Users)
 
-```bash
-.
-├── app.py              # Flask app entry point
-├── database.py         # SQLite database functions
-├── data.db             # SQLite database file (auto-created)
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
+| Username | Password |
+|----------|----------|
+| user1    | pass1    |
+| user2    | pass2    |
+
+---
+
+## 📦 Features
+
+- User Login and Token-Based Authentication
+- List All Suppliers
+- View Supplier Details with Products
+- Submit Orders with Items and Total Amount
+- Uses SQLite for Local Data Storage
+
+---
+
+## 📋 API Endpoints
+
+### 🔑 `POST /login`
+
+Authenticate user and return session token.
+
+**Request Body:**
+```json
+{
+  "username": "user1",
+  "password": "pass1"
+}
