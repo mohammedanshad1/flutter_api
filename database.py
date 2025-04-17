@@ -1,5 +1,13 @@
 import sqlite3
+import os
 
+# Always use absolute path to avoid permission issues
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE = os.path.join(BASE_DIR, 'data.db')
+def get_db():
+    conn = sqlite3.connect(DATABASE)
+    conn.row_factory = sqlite3.Row  # Access columns by name
+    return conn
 DATABASE = 'data.db'
 
 def get_db():
