@@ -1,10 +1,29 @@
-# Flask API Service Starter
+# Supplier Connect API
 
-This is a minimal Flask API service starter based on [Google Cloud Run Quickstart](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service).
+This is a lightweight Flask-based REST API built for a Supplier Connect application. It manages users, suppliers, products, and order submissions, and is intended to be used with a Flutter frontend.
 
-## Getting Started
+### 🌐 Live API
+> Hosted on Vercel  
+👉 [https://amazon-api-main.vercel.app](https://amazon-api-main.vercel.app)
 
-Server should run automatically when starting a workspace. To run manually, run:
-```sh
-./devserver.sh
-```
+---
+
+## 🚀 Features
+
+- ✅ User Login with Session Tokens
+- 📦 View All Suppliers
+- 🛒 View Products by Supplier
+- 🧾 Submit Orders with Multiple Items
+- 🔒 Basic token-based Authentication
+
+---
+
+## 📁 Project Structure
+
+```bash
+.
+├── app.py              # Flask app entry point
+├── database.py         # SQLite database functions
+├── data.db             # SQLite database file (auto-created)
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
