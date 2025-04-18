@@ -13,7 +13,6 @@ This is a simple RESTful API built with Python Flask for a **Supplier Connect** 
 | Username | Password |
 |----------|----------|
 | user1    | pass1    |
-| user2    | pass2    |
 
 ---
 
