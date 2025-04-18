@@ -20,7 +20,7 @@ python init_db.py
 
 ## ▶️ Run Command
 
-python app.py
+python main.py
 
 ## 🔐 Sample Login Credentials (Dummy Users)
 
