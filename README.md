@@ -8,6 +8,20 @@ This is a simple RESTful API built with Python Flask for a **Supplier Connect** 
 
 ---
 
+## 🛠️ Setup on Local
+
+git clone https:https://github.com/mohammedanshad1/flutter_api.git
+cd flutter_api
+pip install flask flask-cors flask-jwt-extended sqlite3
+
+## 🗃️ Init Database
+
+python init_db.py
+
+## ▶️ Run Command
+
+python app.py
+
 ## 🔐 Sample Login Credentials (Dummy Users)
 
 | Username | Password |
